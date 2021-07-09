@@ -1,0 +1,13 @@
+/**
+* This file contains code that is responsible for
+* generating multiple useful CSS utility classes.
+*
+*/
+
+$directions: ('top', 'right', 'bottom', 'left');
+
+@each $direction in $directions {
+	.border-#{$direction} {
+		border-#{$direction}: var(--border-size-sm) solid var(--clr-gray-300);
+	}
+}
