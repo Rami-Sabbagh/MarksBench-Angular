@@ -8,5 +8,10 @@ footer {
 }
 
 .authors {
+	display: flex;
 	margin-right: auto;
+}
+
+a {
+	color: var(--clr-blue-600);
 }
