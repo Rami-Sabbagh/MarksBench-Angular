@@ -1,0 +1,33 @@
+header {
+	display: flex;
+	padding: var(--padding-md) var(--padding-sm);
+}
+
+h1 {
+	font-size: var(--font-md);
+	font-weight: var(--font-bold);
+	margin: 0 {
+		right: auto;
+	}
+}
+
+.data-format-switch {
+	background-color: transparent;
+	border: none;
+	font-family: Poppins;
+
+	cursor: pointer;
+
+	&:not(:last-child) {
+		margin-right: 5px;
+	}
+}
+
+.header-menu {
+	display: flex;
+
+	> div {
+		display: flex;
+		align-items: center;
+	}
+}
