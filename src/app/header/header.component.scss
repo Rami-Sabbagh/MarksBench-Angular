@@ -1,5 +1,7 @@
 header {
 	display: flex;
+	align-items: center;
+
 	padding: var(--padding-md) var(--padding-sm);
 }
 
@@ -14,12 +16,21 @@ h1 {
 .data-format-switch {
 	background-color: transparent;
 	border: none;
-	font-family: Poppins;
+	font-family: Roboto;
 
 	cursor: pointer;
+	transition: 0.2s all ease-in;
 
 	&:not(:last-child) {
 		margin-right: 5px;
+	}
+
+	&:hover {
+		color: var(--clr-blue-900);
+	}
+
+	&.active {
+		color: var(--clr-blue-600);
 	}
 }
 
