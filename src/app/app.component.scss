@@ -1,0 +1,18 @@
+:host {
+	display: flex;
+	min-height: 100vh;
+	background-color: #1E1E1E;
+}
+
+.app-wrapper {
+	display: flex;
+	flex-flow: column;
+	
+	margin: auto;
+
+	min-width: 600px;
+	min-height: 500px;
+
+	background-color: white;
+	border-radius: var(--border-radius-app-frame);
+}
