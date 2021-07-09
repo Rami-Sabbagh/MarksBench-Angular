@@ -1,7 +1,9 @@
 <svg
 	version="1.1"
 	viewBox="0 0 24 24"
-	style="display: inline-block; width: 1.5rem"
+	[class]="svgClass"
+	[style.width]="width"
+	[style.height]="height"
 >
-	<path [class]="customClass" [attr.d]="pathData" />
+	<path [attr.d]="pathData" />
 </svg>

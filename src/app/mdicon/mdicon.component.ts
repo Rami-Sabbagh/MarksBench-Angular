@@ -1,9 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
 	selector: 'app-mdicon',
 	templateUrl: './mdicon.component.html',
 	styleUrls: ['./mdicon.component.scss'],
+	encapsulation: ViewEncapsulation.None,
 })
 export class MdiconComponent implements OnInit {
 	/**
@@ -15,9 +16,19 @@ export class MdiconComponent implements OnInit {
 
 	/**
 	 * An optional custom class that the user can provide
-	 * to the SVG Path element of the icon.
+	 * to the SVG.
 	 */
-	@Input() customClass?: string;
+	@Input() svgClass?: string;
+
+	/**
+	 * An optional width for the SVG that the user can provide.
+	 */
+	@Input() width?: string = '24px';
+
+	/**
+	 * An optional height for the SVG that the user can provide.
+	 */
+	@Input() height?: string = '24px';
 
 	constructor() {}
 
