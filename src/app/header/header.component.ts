@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+
 import { mdiGithub } from '@mdi/js';
+import { mdiTrashCanOutline } from '@mdi/js';
+import { mdiHelpCircleOutline } from '@mdi/js';
 
 @Component({
 	selector: 'app-header',
@@ -17,8 +20,10 @@ export class HeaderComponent implements OnInit {
 	 */
 	public selectedDataFormat: string = 'CSV';
 
-	/* -- Icons that are bound to the template -- */
+	/* -- Material Design Icons -- */
 	public mdiGithub: string = mdiGithub;
+	public mdiTrashCanOutline: string = mdiTrashCanOutline;
+	public mdiHelpCircleOutline: string = mdiHelpCircleOutline;
 
 	constructor() {}
 

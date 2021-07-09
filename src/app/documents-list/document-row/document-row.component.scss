@@ -5,6 +5,11 @@
 	padding: var(--padding-sm);
 }
 
+.document-status {
+	display: flex;
+	align-items: center;
+}
+
 h2 {
 	font-size: var(--font-md);
 	font-weight: var(--font-medium);

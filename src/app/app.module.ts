@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { DocumentsListComponent } from './documents-list/documents-list.component';
 import { DocumentRowComponent } from './documents-list/document-row/document-row.component';
+import { MdiconComponent } from './mdicon/mdicon.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { DocumentRowComponent } from './documents-list/document-row/document-row
     HeaderComponent,
     FooterComponent,
     DocumentsListComponent,
-    DocumentRowComponent
+    DocumentRowComponent,
+    MdiconComponent
   ],
   imports: [
     BrowserModule

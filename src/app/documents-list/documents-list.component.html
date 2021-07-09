@@ -1,3 +1,20 @@
 <main>
-	<app-document-row *ngFor="let item of [1, 2, 3]"></app-document-row>
+	<div *ngIf="pdfDocuments.length !== 0">
+		<app-document-row *ngFor="let item of [1, 2, 3]"></app-document-row>
+	</div>
+
+	<!-- <div>
+		<svg
+			width="142"
+			height="142"
+			viewBox="0 0 142 142"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path
+				d="M16.4583 0.875C7.80958 0.875 0.875 7.80958 0.875 16.4583V125.542C0.875 134.19 7.80958 141.125 16.4583 141.125H125.542C134.19 141.125 141.125 134.19 141.125 125.542V16.4583C141.125 7.80958 134.19 0.875 125.542 0.875H16.4583ZM16.4583 16.4583H125.542V125.542H16.4583V16.4583ZM32.0417 32.0417V47.625H109.958V32.0417H32.0417ZM32.0417 63.2083V78.7917H109.958V63.2083H32.0417ZM32.0417 94.375V109.958H86.5833V94.375H32.0417Z"
+				fill="black"
+			/>
+		</svg>
+	</div> -->
 </main>

@@ -1,0 +1,8 @@
+:host {
+	/* I want the main content to span all the available space */
+	flex-grow: 1;
+}
+
+main {
+	height: 100%;
+}
