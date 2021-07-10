@@ -8,19 +8,19 @@ import { DocumentsListComponent } from './documents-list/documents-list.componen
 import { DocumentRowComponent } from './documents-list/document-row/document-row.component';
 import { MdiconComponent } from './mdicon/mdicon.component';
 
+import { IconModule } from '@visurel/iconify-angular';
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    DocumentsListComponent,
-    DocumentRowComponent,
-    MdiconComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		HeaderComponent,
+		FooterComponent,
+		DocumentsListComponent,
+		DocumentRowComponent,
+		MdiconComponent,
+	],
+	imports: [BrowserModule, IconModule],
+	providers: [],
+	bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
